@@ -6,6 +6,6 @@ import retrofit2.http.Query
 
 interface MoviesService {
 
-    @GET("14nS16EqhaHbugY2hJgHgQJ_RRhmfiObUiUp9Uw8pe2o/values/movies!A1:J4")
+    @GET("14nS16EqhaHbugY2hJgHgQJ_RRhmfiObUiUp9Uw8pe2o/values/movies!A1:J4?{key}")
     suspend fun getMovies(@Query("key") apiKey: String): MoviesResponse
 }
